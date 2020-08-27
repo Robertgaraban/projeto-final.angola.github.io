@@ -10,7 +10,13 @@ export class HomeComponent implements OnInit {
 
   constructor() { }
 
+  termo: string;
+
   ngOnInit(): void {
+  }
+
+  buscar(form) {
+  	location.href = `/resultados/${form.value.termo}`;
   }
 
 }

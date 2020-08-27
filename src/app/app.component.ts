@@ -7,7 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ProjetoFinalAngolaCLI';
-  onSubmit(busqueda){
-    console.log(busqueda.form.value);
-  };
+
 }
