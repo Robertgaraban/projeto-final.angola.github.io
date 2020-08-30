@@ -8,7 +8,7 @@ export class GifsService {
 
   constructor(private http: HttpClient) { }
 
-  private api_key = 'tdPvAGDGFpN6JDD3qnOsNvdn3SkYALNf';
+  private api_key = 'yB1XQR25dSJYTHb4ZAqmXQZnyFsJxWNu';
   private limit = '24';
   private url = 'https://api.giphy.com/v1/gifs/search';
 	
