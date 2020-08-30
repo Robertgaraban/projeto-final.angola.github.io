@@ -1,17 +1,11 @@
-import { NgModule, Component } from '@angular/core';
+import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-
-import { HomeComponent} from "./components/home/home.component";
-import { BusquedaComponent} from "./components/busqueda/busqueda.component";
-
+import { GifsComponent } from './gifs/gifs.component';
+import { BuscarComponent } from './buscar/buscar.component';
 
 const routes: Routes = [
-
-  
-  { path: "Home", component: HomeComponent },
-  { path: "Busqueda", component: BusquedaComponent },
-  { path: "**", pathMatch: 'full', redirectTo: 'Home' },
-
+	{ path: '', component: BuscarComponent },
+	{ path: 'resultados/:q', component: GifsComponent }
 ];
 
 @NgModule({
